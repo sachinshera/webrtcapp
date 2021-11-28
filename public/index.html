@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web rtc </title>
+</head>
+<body>
+	<div class="selectRoom">
+		<label for="roomname">Enter Room name</label>
+		<input type="text" class="roomId">
+		<button class="gobtn">Go </button>
+	</div>
+	<div class="roomcontent"style="display: none;">
+		<video class="localVideo" autoplay controls width="720" height="480"></video>
+		<video class="remoteVideo" autoplay controls  width="720" height="480"></video>
+	</div>
+    <script src="/socket.io/socket.io.js"></script>
+	<script src="/static/index.js"></script>
+</body>
+</html>
